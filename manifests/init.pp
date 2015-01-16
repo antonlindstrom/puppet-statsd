@@ -45,6 +45,7 @@ class statsd (
   $librato_email                     = $statsd::params::librato_email,
   $librato_token                     = $statsd::params::librato_token,
   $librato_snapTime                  = $statsd::params::librato_snapTime,
+  $librato_globalPrefix              = $statsd::params::librato_globalPrefix,
   $librato_countersAsGauges          = $statsd::params::librato_countersAsGauges,
   $librato_skipInternalMetrics       = $statsd::params::librato_skipInternalMetrics,
   $librato_retryDelaySecs            = $statsd::params::librato_retryDelaySecs,

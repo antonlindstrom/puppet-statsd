@@ -45,6 +45,7 @@ class statsd::params {
   $librato_email                     = undef
   $librato_token                     = undef
   $librato_snapTime                  = '10000'
+  $librato_globalPrefix              = 'stats'
   $librato_countersAsGauges          = true
   $librato_skipInternalMetrics       = true
   $librato_retryDelaySecs            = '5'
