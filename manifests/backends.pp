@@ -16,7 +16,7 @@ class statsd::backends {
   # Make sure $statsd::librato_email and $statsd::librato_token are set
   if $backends =~ /librato/ {
     exec { 'install-statsd-librato-backend':
-      command => '/usr/bin/npm install --save github.com/fanhattan/statsd-librato-backend#7860c49cf80e50d2c6a773fae0a569d0c07e1b9b',
+      command => '/usr/bin/npm install --save git://github.com/fanhattan/statsd-librato-backend#7860c49cf80e50d2c6a773fae0a569d0c07e1b9b',
       cwd     => "${statsd::node_module_dir}/statsd",
       unless  => "/usr/bin/test -d ${node_base}/statsd-librato-backend",
       require => Package['statsd'],
